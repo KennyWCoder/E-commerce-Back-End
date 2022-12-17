@@ -67,7 +67,7 @@ router.delete('/:id', async (req, res) => {
 			id: req.params.id,
 		},
 	})
-	.then((rmvdCategory) => {
+	.then((removedCategory) => {
 		res.json(`The category was removed from the database`);
 	})
 	.catch((err) => {
